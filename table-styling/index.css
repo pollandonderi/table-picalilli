@@ -1,0 +1,35 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+table {
+	text-align: left;
+    border-collapse: collapse;
+    caption-side: bottom;
+} 
+th, td{
+    border: 1px solid black;
+    border: 1px solid lightgrey;
+	padding: 0.25rem 0.75rem;
+}
+th,
+caption {
+	text-align: start;
+}
+
+thead th:not(:first-child),
+td {
+	text-align: end;
+}
+thead{
+    border-block-end: 2px solid;
+	background: whitesmoke;
+}
+tfoot {
+	border-block: 2px solid;
+	background: whitesmoke;
+}
+th:first-child {
+	position: sticky;
+	inset-inline-start: 0;
+}
