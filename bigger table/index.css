@@ -1,0 +1,49 @@
+.wrapper{
+    overflow: scroll;
+}
+
+th:first-child{
+    border-inline-end: none;
+    position: sticky;
+    text-align: start;
+    left: 0;
+}
+tr:nth-last-child(even){
+    background-color: whitesmoke;
+}
+tbody th {
+	background: white;
+}
+
+thead th,
+tfoot th {
+	background: whitesmoke;
+}
+td:first-of-type,
+:where(thead, tfoot) th:nth-child(2) {
+	border-inline-start: none;
+}
+th:first-child::after {
+	content: '';
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline-end: 0;
+	width: 1px;
+	height: 100%;
+	background: lightgrey;
+}
+th,
+td {
+	vertical-align: baseline;
+}
+
+thead th {
+	vertical-align: bottom;
+}
+thead th:not(:first-child){
+    width:9rem
+}
+table {
+	width: max(65rem, 100%);
+	table-layout: fixed;
+}

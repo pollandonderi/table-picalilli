@@ -33,3 +33,6 @@ th:first-child {
 	position: sticky;
 	inset-inline-start: 0;
 }
+tr:nth-child(even) {
+	background-color:rgba(83, 83, 141, 0.603);
+}
